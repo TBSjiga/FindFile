@@ -5,13 +5,13 @@
 
 int main(int argc, char *argv[]){
   FILE *fp;
-  int line = 1;
+  char temp[512];
+  char *splitted;
   char *substring;
   int pos = 0;
   int found = 0;
-  char temp[512];
-  char *splitted;
   int word_index = 0;
+  int line = 1;
   
   
   /* Check if correct extension of the file is provided */
